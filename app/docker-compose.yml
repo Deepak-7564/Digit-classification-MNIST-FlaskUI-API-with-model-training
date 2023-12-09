@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      APP_USERNAME: "username"
+      APP_PASSWORD: "password"
+      MODEL_PATH: "/usr/src/app/static/models/model.pth"
+      CUDA_DEVICE: "0"
+      MYSQL_HOST: "host.docker.internal"
+      MYSQL_USER: "root"
+      MYSQL_PASSWORD: "admin123"  # Replace with your actual password
+      MYSQL_DATABASE: "database1"
+    volumes:
+      - .:/usr/src/app
