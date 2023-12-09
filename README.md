@@ -13,53 +13,58 @@ This project implements a simple AI model for image classification trained on th
 ## Installation
 1. Clone the repository:
 
-git clone https://github.com/Deepak-7564/Digit-classification-MNIST-FlaskUI-API-with-model-training.git
+- Run "git clone https://github.com/Deepak-7564/Digit-classification-MNIST-FlaskUI-API-with-model-training.git"
 
-cd Project/app
+- Run "cd Project/app"
 
 
 2. Install Python dependencies:
 
-pip install -r requirements.txt
+- Run "pip install -r requirements.txt"
 
 3. Change the credentials as per your requirements in the .env file
 
 ## Usage
 
 Run the Flask application:
-python app.py
+- Run "python app.py"
 
 ###For API
+
 API Endpoint:
 
-POST /predict
-Content-Type: application/json
-username : username
-password : password
+-POST /predict
+
+  Content-Type: application/json
+  
+  username : username
+  
+  password : password
 
 {
 "data": "base64 image data"
 }
 
 ###For UI
-a) /
-b) /predictui
+- /
+- /predictui
 
 ## Docker Deployment
 Build the Docker image:
 
-docker build -t my-python-app .
+run "docker build -t my-python-app ."
 
 Run the Docker container:
-docker-compose up
+
+- Run "docker-compose up"
 
 
 
 ## Kubernetes Deployment
 Apply the Kubernetes configurations:
 
-kubectl apply -f deployment.yaml
-kubectl apply -f service.yaml
+- Run "kubectl apply -f deployment.yaml"
+- Run "kubectl apply -f service.yaml"
 
 
 ## Troubleshooting
