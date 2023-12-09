@@ -15,7 +15,7 @@ This project implements a simple AI model for image classification trained on th
 
 - Run "git clone https://github.com/Deepak-7564/Digit-classification-MNIST-FlaskUI-API-with-model-training.git"
 
-- Run "cd Project/app"
+- Run "cd Digit-classification-MNIST-FlaskUI-API-with-model-training/app"
 
 
 2. Install Python dependencies:
